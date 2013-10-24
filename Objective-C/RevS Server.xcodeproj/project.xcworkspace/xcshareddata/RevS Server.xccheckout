@@ -5,13 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>35A98607-06CB-4154-9BE5-B67349DF8856</string>
+	<string>839F32E7-7426-4397-B5A6-5E85876BC289</string>
 	<key>IDESourceControlProjectName</key>
 	<string>RevS Server</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>48900E09-C05F-441C-9986-74108D1CFB7A</key>
 		<string>https://github.com/theGreatLzbdd/RevS-Project-Objective-C.git</string>
+		<key>B2B138C4-4001-4AAB-B9EC-5E7EEDE7316F</key>
+		<string>https://github.com/theGreatLzbdd/RevS-Server.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RevS Server/Objective-C/RevS Server.xcodeproj/project.xcworkspace</string>
@@ -19,9 +21,11 @@
 	<dict>
 		<key>48900E09-C05F-441C-9986-74108D1CFB7A</key>
 		<string>../../../..</string>
+		<key>B2B138C4-4001-4AAB-B9EC-5E7EEDE7316F</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/theGreatLzbdd/RevS-Project-Objective-C.git</string>
+	<string>https://github.com/theGreatLzbdd/RevS-Server.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -35,6 +39,14 @@
 			<string>48900E09-C05F-441C-9986-74108D1CFB7A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>RevS Project</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B2B138C4-4001-4AAB-B9EC-5E7EEDE7316F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RevS Server</string>
 		</dict>
 	</array>
 </dict>

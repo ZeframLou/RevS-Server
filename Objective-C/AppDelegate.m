@@ -73,6 +73,7 @@
     selectedClients = [NSMutableArray array];
     messenger = [RSMessenger messengerWithPort:MESSAGE_PORT delegate:self];
     messageArgumentsTable.backSpaceDelegate = self;
+    NSLog(@"%@",[RSUtilities publicIpAddress]);
 }
 
 - (IBAction)start:(id)sender {
@@ -118,6 +119,10 @@
         checkBox.state = state;
         [self checkChanged:checkBox];
     }];
+}
+
+- (IBAction)refreshClientList:(id)sender {
+    [clientListTable reloadData];
 }
 
 - (IBAction)sendMessage:(id)sender {

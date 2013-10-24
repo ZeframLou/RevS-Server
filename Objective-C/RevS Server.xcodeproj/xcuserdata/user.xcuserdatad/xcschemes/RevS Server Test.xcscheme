@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE9142CA17FE98570047BE80"
-               BuildableName = "RevS Server Test.app"
+               BuildableName = "RevS Server.app"
                BlueprintName = "RevS Server"
                ReferencedContainer = "container:RevS Server.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE9142CA17FE98570047BE80"
-            BuildableName = "RevS Server Test.app"
+            BuildableName = "RevS Server.app"
             BlueprintName = "RevS Server"
             ReferencedContainer = "container:RevS Server.xcodeproj">
          </BuildableReference>
@@ -52,7 +52,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE9142CA17FE98570047BE80"
-            BuildableName = "RevS Server Test.app"
+            BuildableName = "RevS Server.app"
             BlueprintName = "RevS Server"
             ReferencedContainer = "container:RevS Server.xcodeproj">
          </BuildableReference>
@@ -70,7 +70,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE9142CA17FE98570047BE80"
-            BuildableName = "RevS Server Test.app"
+            BuildableName = "RevS Server.app"
             BlueprintName = "RevS Server"
             ReferencedContainer = "container:RevS Server.xcodeproj">
          </BuildableReference>
