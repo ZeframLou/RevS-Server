@@ -73,7 +73,6 @@
     selectedClients = [NSMutableArray array];
     messenger = [RSMessenger messengerWithPort:MESSAGE_PORT delegate:self];
     messageArgumentsTable.backSpaceDelegate = self;
-    NSLog(@"%@",[RSUtilities publicIpAddress]);
 }
 
 - (IBAction)start:(id)sender {

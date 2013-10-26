@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CE8EF9731806DEDC006CE20F /* GNU Lesser General Public License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE8EF9721806DEDC006CE20F /* GNU Lesser General Public License.rtf */; };
-		CE9142CF17FE98570047BE80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9142CE17FE98570047BE80 /* Cocoa.framework */; };
+		CE8F89BA181BA3150071345E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91431917FE9D930047BE80 /* Security.framework */; };
+		CE8F89BB181BA3230071345E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9142CE17FE98570047BE80 /* Cocoa.framework */; };
+		CE8F89BF181BA5280071345E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F89BE181BA5280071345E /* CFNetwork.framework */; };
 		CE9142DB17FE98570047BE80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9142DA17FE98570047BE80 /* main.m */; };
 		CE9142E217FE98570047BE80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9142E117FE98570047BE80 /* AppDelegate.m */; };
 		CE91430317FE9B670047BE80 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9142EC17FE9B670047BE80 /* GCDAsyncSocket.m */; };
@@ -23,12 +25,11 @@
 		CE91430C17FE9B670047BE80 /* RSUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91430017FE9B670047BE80 /* RSUpload.m */; };
 		CE91430D17FE9B670047BE80 /* RSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91430217FE9B670047BE80 /* RSUtilities.m */; };
 		CE91431417FE9CB50047BE80 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE91431317FE9CB50047BE80 /* MainMenu.xib */; };
-		CE91431817FE9D710047BE80 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91431717FE9D710047BE80 /* CFNetwork.framework */; };
-		CE91431A17FE9D930047BE80 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91431917FE9D930047BE80 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE8EF9721806DEDC006CE20F /* GNU Lesser General Public License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "GNU Lesser General Public License.rtf"; path = "/Users/user/Desktop/RevS Project/RevS Server/GNU Lesser General Public License.rtf"; sourceTree = "<absolute>"; };
+		CE8F89BE181BA5280071345E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE9142CB17FE98570047BE80 /* RevS Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RevS Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9142CE17FE98570047BE80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CE9142D117FE98570047BE80 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,7 +65,6 @@
 		CE91430117FE9B670047BE80 /* RSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSUtilities.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/RSUtilities.h"; sourceTree = "<absolute>"; };
 		CE91430217FE9B670047BE80 /* RSUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSUtilities.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/RSUtilities.m"; sourceTree = "<absolute>"; };
 		CE91431317FE9CB50047BE80 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/MainMenu.xib"; sourceTree = "<absolute>"; };
-		CE91431717FE9D710047BE80 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE91431917FE9D930047BE80 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -73,9 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE91431A17FE9D930047BE80 /* Security.framework in Frameworks */,
-				CE91431817FE9D710047BE80 /* CFNetwork.framework in Frameworks */,
-				CE9142CF17FE98570047BE80 /* Cocoa.framework in Frameworks */,
+				CE8F89BF181BA5280071345E /* CFNetwork.framework in Frameworks */,
+				CE8F89BB181BA3230071345E /* Cocoa.framework in Frameworks */,
+				CE8F89BA181BA3150071345E /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,8 +102,8 @@
 		CE9142CD17FE98570047BE80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE8F89BE181BA5280071345E /* CFNetwork.framework */,
 				CE91431917FE9D930047BE80 /* Security.framework */,
-				CE91431717FE9D710047BE80 /* CFNetwork.framework */,
 				CE9142CE17FE98570047BE80 /* Cocoa.framework */,
 				CE9142D017FE98570047BE80 /* Other Frameworks */,
 			);
