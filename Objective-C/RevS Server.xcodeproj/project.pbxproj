@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE8EF9731806DEDC006CE20F /* GNU Lesser General Public License.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE8EF9721806DEDC006CE20F /* GNU Lesser General Public License.rtf */; };
 		CE8F89BA181BA3150071345E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91431917FE9D930047BE80 /* Security.framework */; };
 		CE8F89BB181BA3230071345E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9142CE17FE98570047BE80 /* Cocoa.framework */; };
 		CE8F89BF181BA5280071345E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE8F89BE181BA5280071345E /* CFNetwork.framework */; };
@@ -28,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE8EF9721806DEDC006CE20F /* GNU Lesser General Public License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "GNU Lesser General Public License.rtf"; path = "/Users/user/Desktop/RevS Project/RevS Server/GNU Lesser General Public License.rtf"; sourceTree = "<absolute>"; };
 		CE8F89BE181BA5280071345E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		CE9142CB17FE98570047BE80 /* RevS Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RevS Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9142CE17FE98570047BE80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -40,14 +38,14 @@
 		CE9142DC17FE98570047BE80 /* RevS Server-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevS Server-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		CE9142E017FE98570047BE80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/AppDelegate.h"; sourceTree = "<absolute>"; };
 		CE9142E117FE98570047BE80 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/AppDelegate.m"; sourceTree = "<absolute>"; };
-		CE9142EB17FE9B670047BE80 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/GCDAsyncSocket.h"; sourceTree = "<absolute>"; };
-		CE9142EC17FE9B670047BE80 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/GCDAsyncSocket.m"; sourceTree = "<absolute>"; };
-		CE9142ED17FE9B670047BE80 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/GCDAsyncUdpSocket.h"; sourceTree = "<absolute>"; };
-		CE9142EE17FE9B670047BE80 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/GCDAsyncUdpSocket.m"; sourceTree = "<absolute>"; };
-		CE9142EF17FE9B670047BE80 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+AES.h"; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/NSData+AES.h"; sourceTree = "<absolute>"; };
-		CE9142F017FE9B670047BE80 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES.m"; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/NSData+AES.m"; sourceTree = "<absolute>"; };
-		CE9142F117FE9B670047BE80 /* PortMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortMapper.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/PortMapper.h"; sourceTree = "<absolute>"; };
-		CE9142F217FE9B670047BE80 /* PortMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortMapper.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/PortMapper.m"; sourceTree = "<absolute>"; };
+		CE9142EB17FE9B670047BE80 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/GCDAsyncSocket.h"; sourceTree = "<absolute>"; };
+		CE9142EC17FE9B670047BE80 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/GCDAsyncSocket.m"; sourceTree = "<absolute>"; };
+		CE9142ED17FE9B670047BE80 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/GCDAsyncUdpSocket.h"; sourceTree = "<absolute>"; };
+		CE9142EE17FE9B670047BE80 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/GCDAsyncUdpSocket.m"; sourceTree = "<absolute>"; };
+		CE9142EF17FE9B670047BE80 /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+AES.h"; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/NSData+AES.h"; sourceTree = "<absolute>"; };
+		CE9142F017FE9B670047BE80 /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+AES.m"; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/NSData+AES.m"; sourceTree = "<absolute>"; };
+		CE9142F117FE9B670047BE80 /* PortMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortMapper.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/PortMapper.h"; sourceTree = "<absolute>"; };
+		CE9142F217FE9B670047BE80 /* PortMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortMapper.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/Third Party/PortMapper.m"; sourceTree = "<absolute>"; };
 		CE9142F317FE9B670047BE80 /* RevS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RevS.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/RevS.h"; sourceTree = "<absolute>"; };
 		CE9142F417FE9B670047BE80 /* RSClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSClient.h; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/RSClient.h"; sourceTree = "<absolute>"; };
 		CE9142F517FE9B670047BE80 /* RSClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSClient.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/RSClient.m"; sourceTree = "<absolute>"; };
@@ -82,6 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8F89C7181CEDE60071345E /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				CE9142EB17FE9B670047BE80 /* GCDAsyncSocket.h */,
+				CE9142EC17FE9B670047BE80 /* GCDAsyncSocket.m */,
+				CE9142ED17FE9B670047BE80 /* GCDAsyncUdpSocket.h */,
+				CE9142EE17FE9B670047BE80 /* GCDAsyncUdpSocket.m */,
+				CE9142EF17FE9B670047BE80 /* NSData+AES.h */,
+				CE9142F017FE9B670047BE80 /* NSData+AES.m */,
+				CE9142F117FE9B670047BE80 /* PortMapper.h */,
+				CE9142F217FE9B670047BE80 /* PortMapper.m */,
+			);
+			name = "Third Party";
+			sourceTree = "<group>";
+		};
 		CE9142C217FE98570047BE80 = {
 			isa = PBXGroup;
 			children = (
@@ -126,18 +139,10 @@
 				CE9142E017FE98570047BE80 /* AppDelegate.h */,
 				CE9142E117FE98570047BE80 /* AppDelegate.m */,
 				CE91431317FE9CB50047BE80 /* MainMenu.xib */,
-				CE9142EB17FE9B670047BE80 /* GCDAsyncSocket.h */,
-				CE9142EC17FE9B670047BE80 /* GCDAsyncSocket.m */,
-				CE9142ED17FE9B670047BE80 /* GCDAsyncUdpSocket.h */,
-				CE9142EE17FE9B670047BE80 /* GCDAsyncUdpSocket.m */,
-				CE9142EF17FE9B670047BE80 /* NSData+AES.h */,
-				CE9142F017FE9B670047BE80 /* NSData+AES.m */,
-				CE9142F117FE9B670047BE80 /* PortMapper.h */,
-				CE9142F217FE9B670047BE80 /* PortMapper.m */,
 				CE9142F317FE9B670047BE80 /* RevS.h */,
+				CE9142F617FE9B670047BE80 /* RSConstants.h */,
 				CE9142F417FE9B670047BE80 /* RSClient.h */,
 				CE9142F517FE9B670047BE80 /* RSClient.m */,
-				CE9142F617FE9B670047BE80 /* RSConstants.h */,
 				CE9142F717FE9B670047BE80 /* RSDownload.h */,
 				CE9142F817FE9B670047BE80 /* RSDownload.m */,
 				CE9142F917FE9B670047BE80 /* RSMessenger.h */,
@@ -150,7 +155,7 @@
 				CE91430017FE9B670047BE80 /* RSUpload.m */,
 				CE91430117FE9B670047BE80 /* RSUtilities.h */,
 				CE91430217FE9B670047BE80 /* RSUtilities.m */,
-				CE8EF9721806DEDC006CE20F /* GNU Lesser General Public License.rtf */,
+				CE8F89C7181CEDE60071345E /* Third Party */,
 				CE9142D517FE98570047BE80 /* Supporting Files */,
 			);
 			name = "RevS Server";
@@ -220,7 +225,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE91431417FE9CB50047BE80 /* MainMenu.xib in Resources */,
-				CE8EF9731806DEDC006CE20F /* GNU Lesser General Public License.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
