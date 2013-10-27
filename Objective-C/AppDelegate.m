@@ -127,7 +127,7 @@
 - (IBAction)saveLog:(id)sender {
     if (logView.string.length > 0) {
         NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-        [formatter setDateFormat:@"yyyy.MM.dd-HH:mm"];
+        [formatter setDateFormat:@"yyyy/MM/dd-HH/mm"];
         [logView.string writeToFile:[NSString stringWithFormat:@"%@/Desktop/RevS_Server_Log_%@.txt",NSHomeDirectory(),[formatter stringFromDate:[NSDate date]]] atomically:YES encoding:NSUTF8StringEncoding error:nil];
     }
 }
