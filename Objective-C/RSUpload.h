@@ -59,6 +59,6 @@
 /*
  Called after an upload request failed.
  */
-- (void)uploadDidFail:(NSString *)upload;
+- (void)uploadDidFail:(NSString *)fileName;
 
 @end

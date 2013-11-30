@@ -54,6 +54,16 @@
 - (void)sendServerMessage:(NSString *)message toServerAddress:(NSString *)serverAddress tag:(NSInteger)tag;
 
 /*
+  Send a message to all contacts.
+*/
+- (void)sendMessageToAllContacts:(NSString *)message;
+
+/*
+  Send a message to contacts with the highest probability values.
+*/
+- (void)sendMessage:(NSString *)message toBestContacts:(NSUInteger)contactcount;
+
+/*
   Close all of the messenger's connections.Note:if the messenger is sending data when you call this method,the connection will be closed after the data has been sent.
 */
 - (void)closeConnection;

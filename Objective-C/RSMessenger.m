@@ -90,6 +90,32 @@ static NSMutableArray *messageHistory;
     [udpSocket sendData:[NSData encryptString:message withKey:MESSAGE_CODE] toHost:serverAddress port:port withTimeout:30 tag:0];
 }
 
+- (void)sendMessageToAllContacts:(NSString *)message
+{
+    NSArray *contactPublicIpList = [RSUtilities localPublicIpList];
+    NSArray *contactPrivateIpList = [RSUtilities localPrivateIpList];
+    NSInteger i = 0;
+    for (NSString *string in contactPublicIpList) {
+        NSString *publicIP = string;
+        NSString *privateIP = [contactPrivateIpList objectAtIndex:i];
+        [self sendUdpMessage:message toHostWithPublicAddress:publicIP privateAddress:privateIP tag:0];
+        i++;
+    }
+}
+
+- (void)sendMessage:(NSString *)message toBestContacts:(NSUInteger)contactcount
+{
+    NSArray *contactPublicIpList = [RSUtilities contactPublicIpListWithKValue:contactcount];
+    NSArray *contactPrivateIpList = [RSUtilities contactPrivateIpListWithKValue:contactcount];
+    NSInteger i = 0;
+    for (NSString *string in contactPublicIpList) {
+        NSString *publicIP = string;
+        NSString *privateIP = [contactPrivateIpList objectAtIndex:i];
+        [self sendUdpMessage:message toHostWithPublicAddress:publicIP privateAddress:privateIP tag:0];
+        i++;
+    }
+}
+
 - (void)sendRelayMessage:(NSString *)message toPublicAddress:(NSString *)publicIp privateAddress:(NSString *)privateIp
 {
     [self sendServerMessage:[RSMessenger messageWithIdentifier:@"RELAY" arguments:@[[[NSString alloc]initWithData:[NSData encryptString:message withKey:MESSAGE_CODE] encoding:NSUTF8StringEncoding],publicIp,privateIp]] toServerAddress:SERVER_IP tag:0];
@@ -106,7 +132,7 @@ static NSMutableArray *messageHistory;
 
 + (NSString *)messageWithIdentifier:(NSString *)identifier arguments:(NSArray *)arguments
 {
-    NSString *message = [NSString stringWithFormat:@"ID{%@}|ARG{",identifier];
+    NSString *message = [NSString stringWithFormat:@"ID{%@}ARG{",identifier];
     NSInteger i = 0;
     for (NSString *argument in arguments) {
         message = [message stringByAppendingString:argument];
@@ -116,7 +142,7 @@ static NSMutableArray *messageHistory;
         i += 1;
     }
     message = [message stringByAppendingFormat:@"}"];
-    message = [message stringByAppendingFormat:@"|PIP{PrivateAddress}"];
+    message = [message stringByAppendingFormat:@"PIP{PrivateAddress}"];
 
     return message;
 }
@@ -124,13 +150,13 @@ static NSMutableArray *messageHistory;
 + (NSString *)identifierOfMessage:(NSString *)message
 {
     NSString *string = [message substringFromIndex:3];
-    return [string substringToIndex:[string rangeOfString:@"}|ARG{"].location];
+    return [string substringToIndex:[string rangeOfString:@"}ARG{"].location];
 }
 
 + (NSArray *)argumentsOfMessage:(NSString *)message
 {
     NSString *argumentsString = [message substringFromIndex:[message rangeOfString:@"ARG{"].location + 4];
-    argumentsString = [argumentsString substringToIndex:[argumentsString rangeOfString:@"}|PIP{"].location];
+    argumentsString = [argumentsString substringToIndex:[argumentsString rangeOfString:@"}PIP{"].location];
     NSArray *arguments = [argumentsString componentsSeparatedByString:@"[;]"];
     return arguments;
 }
@@ -184,7 +210,7 @@ static NSMutableArray *messageHistory;
     if (!messageHistory) {
         messageHistory = [NSMutableArray array];
     }
-    NSDictionary *dict = [NSDictionary dictionaryWithObjects:@[publicIp,privateIp,message,delegate,sock] forKeys:@[@"publicIp",@"privateIp",@"message",@"delegate"]];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjects:@[publicIp,privateIp,message,delegate] forKeys:@[@"publicIp",@"privateIp",@"message",@"delegate"]];
     if (![messageHistory containsObject:dict]) {
         [messageHistory addObject:dict];
     }
@@ -213,7 +239,7 @@ static NSMutableArray *messageHistory;
 - (void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContext
 {
     NSString *messageString = [NSData decryptData:data withKey:MESSAGE_CODE];
-    NSString *recieverPrivateIP = [messageString substringFromIndex:[messageString rangeOfString:@"|PIP{"].location + 5];
+    NSString *recieverPrivateIP = [messageString substringFromIndex:[messageString rangeOfString:@"PIP{"].location + 5];
     recieverPrivateIP = [recieverPrivateIP substringToIndex:recieverPrivateIP.length - 1];
     if ([recieverPrivateIP isEqualToString:[RSUtilities privateIpAddress]] || [recieverPrivateIP isEqualToString:@"PrivateAddress"]) {
         NSString *messageIdentifier = [RSMessenger identifierOfMessage:messageString];
