@@ -3,7 +3,7 @@
 //  RevS Server Test
 //
 //  Created by Zebang Liu on 13-10-4.
-//  Copyright (c) 2013年 Zebang Liu. All rights reserved.
+//  Copyright (c) 2013 Zebang Liu. All rights reserved.
 //  Contact: the.great.lzbdd@gmail.com
 /*
  This file is part of RevS Server.

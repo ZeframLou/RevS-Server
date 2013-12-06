@@ -24,6 +24,7 @@
 		CE91430C17FE9B670047BE80 /* RSUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91430017FE9B670047BE80 /* RSUpload.m */; };
 		CE91430D17FE9B670047BE80 /* RSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CE91430217FE9B670047BE80 /* RSUtilities.m */; };
 		CE91431417FE9CB50047BE80 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE91431317FE9CB50047BE80 /* MainMenu.xib */; };
+		CE9E64081851E7F6001B6319 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9E64071851E7F6001B6319 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		CE91430217FE9B670047BE80 /* RSUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSUtilities.m; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/RSUtilities.m"; sourceTree = "<absolute>"; };
 		CE91431317FE9CB50047BE80 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenu.xib; path = "/Users/user/Desktop/RevS Project/RevS Server/Objective-C/MainMenu.xib"; sourceTree = "<absolute>"; };
 		CE91431917FE9D930047BE80 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE9E64071851E7F6001B6319 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9E64081851E7F6001B6319 /* SystemConfiguration.framework in Frameworks */,
 				CE8F89BF181BA5280071345E /* CFNetwork.framework in Frameworks */,
 				CE8F89BB181BA3230071345E /* Cocoa.framework in Frameworks */,
 				CE8F89BA181BA3150071345E /* Security.framework in Frameworks */,
@@ -115,6 +118,7 @@
 		CE9142CD17FE98570047BE80 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE9E64071851E7F6001B6319 /* SystemConfiguration.framework */,
 				CE8F89BE181BA5280071345E /* CFNetwork.framework */,
 				CE91431917FE9D930047BE80 /* Security.framework */,
 				CE9142CE17FE98570047BE80 /* Cocoa.framework */,
